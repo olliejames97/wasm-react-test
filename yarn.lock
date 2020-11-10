@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@assemblyscript/loader@^0.17.2":
+  version "0.17.2"
+  resolved "https://registry.yarnpkg.com/@assemblyscript/loader/-/loader-0.17.2.tgz#d435b77525d525c2ece8e27cd77d170a953645a9"
+  integrity sha512-8pLMRIMqPVxOnlyqjflNRuvoHShYNDCeUI3VXN6dr+c3lD4W5lwQnRdJviku8U4opv7CSDfIDZ99uRTwqcBIIA==
+
 "@babel/code-frame@7.10.4", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.5.5":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -2581,6 +2586,11 @@ arrify@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
   integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
+
+as-bind@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/as-bind/-/as-bind-0.4.2.tgz#2a59304f82ce61eb4cd3768ea5da252762c8b6a7"
+  integrity sha512-3S0ldkUcirhxmHRJ4osonF2KsJdaAjDo0lNrlLoKO3wrm1U+GWdzgMtErKlxSpLURjjbXEXysBCd2aWu2IkhVw==
 
 asap@~2.0.6:
   version "2.0.6"

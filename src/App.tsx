@@ -1,15 +1,11 @@
 import * as React from "react";
-import waApi from "./wa-api";
-import { useEffect, useState } from "react";
+import { useWasm } from "./wa-api";
 
 function App() {
-  const [api, setApi] = useState<any>();
-
-  useEffect(() => {
-    waApi.then((api) => {
-      setApi(api.exports);
-    });
-  }, []);
+  const api = useWasm();
+  if (!api) {
+    return <p>Loading</p>;
+  }
 
   return (
     <p>Hello World {api && api.add ? api.add(5, 8) : JSON.stringify(api)}</p>
