@@ -10,17 +10,23 @@
     "@types/node": "^14.14.7",
     "@types/react": "^16.9.56",
     "@types/react-dom": "^16.9.9",
+    "assemblyscript": "^0.17.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
     "typescript": "^4.0.5",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "@assemblyscript/loader": "^0.17.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "jsstart": "react-scripts start",
+    "jsbuild": "react-scripts build",
+    "asbuild": "npm run asbuild:untouched && npm run asbuild:optimized",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "asbuild:untouched": "asc assembly/index.ts --target debug -b public/as-api.wasm",
+    "asbuild:optimized": "asc assembly/index.ts --target release -b public/as-api.wasm",
+    "start": "npm run asbuild && npm run jsstart"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.17.2"
   }
 }
